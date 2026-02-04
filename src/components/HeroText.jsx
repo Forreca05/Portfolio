@@ -28,7 +28,7 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.2}}>
-                    An Informatics Enginner Student <br />
+                    An Enginner Student <br />
                     Eager to Grow
                 </motion.p>
                 <motion.div
