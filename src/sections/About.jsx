@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import Card from "../components/Card"
 import { Globe } from "../components/Globe";
+import CopyEmailButton from "../components/CopyEmailButton";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
     const grid2Container = useRef()
@@ -95,9 +97,30 @@ const About = () => {
                     </figure>
                 </div>
                 {/* Grid 4 */}
-                <div className="grid-special-color grid-4"></div>
+                <div className="grid-special-color grid-4">
+                    <div className="flex flex-col items-center 
+                    justify-center gap-4 size-full">
+                        <p className="text-center headtext">
+                            Do you want to start a project together?
+                        </p>
+                        <CopyEmailButton />
+                    </div>
+                </div>
                 {/* Grid 5 */}
-                <div className="grid-default-color grid-5"></div>
+                <div className="grid-default-color grid-5">
+                    <div className="z-10 w-[50%]">
+                        <p className="headtext">Frameworks and Tools</p>
+                        <p className="subtext">
+                            Throughout my journey, I've had the opportunity 
+                            to work with a variety of languages, frameworks and tools 
+                            that have enriched my skill set and broadened my horizons. 
+                        </p>
+                    </div>
+                    <div className="absolute inset-y-0 md:inset-y-9 w-full
+                    h-full start-[50%] md:scale-125">
+                        <Frameworks />
+                    </div>
+                </div>
             </div>
         </section>
     )
