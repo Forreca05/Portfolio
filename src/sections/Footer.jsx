@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <section className="flex flex-wrap items-center
     justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
-        <div className="mb-4 bg-gradient-to-r from-transparent
+        <div className="mb-4 bg-linear-to-r from-transparent
         via-neutral-700 to-transparent h-1 w-full" />
         <div className="flex gap-2">
             <p>Terms & Conditions</p>
