@@ -4,13 +4,13 @@ function Navigation() {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link" href="#home">
-          Home
+        <a className="nav-link" href="#about">
+          About
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#about">
-          About
+        <a className="nav-link" href="#projects">
+          Projects
         </a>
       </li>
       <li className="nav-li">
@@ -33,7 +33,7 @@ const Navbar = () => {
     w-full backdrop-blur-lg bg-primary/40">
             <div className="mx-auto c-space max-w-7xl">
                 <div className="flex items-center justify-between py-2 sm:py-0">
-                    <a href="/" className="text-xl font-bold
+                    <a href="#home" className="text-xl font-bold
                  transition-colors text-neutral-400 hover:text-white">
                         João Ferreira
                     </a>
