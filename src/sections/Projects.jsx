@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="bg-gradient-to-r from-transparent
         via-neutral-700 to-transparent mt-12 h-px w-full"></div>
         {myProjects.map((project) => (
-            <Project key={project.id} {...project}/>
+            <Project {...project}/>
         ))}
     </section>
   )

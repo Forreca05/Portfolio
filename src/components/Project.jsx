@@ -1,7 +1,9 @@
 import React from 'react'
+import { useState } from 'react'
 import ProjectDetails from './ProjectDetails'
 
 const Project = ({title, description, subDescription, href, image, tags}) => {
+  const [isHidden, setIsHidden] = useState(false)
   return (
     <>
         <div className="flex-wrap items-center py-10 justify-between
@@ -14,22 +16,28 @@ const Project = ({title, description, subDescription, href, image, tags}) => {
                     ))}
                 </div>
             </div>
-            <button className="flex items-center gap-1 cursor-pointer
-            hover-animation">
+            <button 
+                onClick={() => setIsHidden(true)}
+                className="flex items-center gap-1 cursor-pointer
+                hover-animation"
+            >
                 Read More
                 <img src="assets/arrow-right.svg" className="w-5" />
             </button>
         </div>
         <div className="bg-gradient-to-r from-transparent
         via-neutral-700 to-transparent h-px w-full"/>
-        <ProjectDetails 
-            title={title}
-            description={description}
-            subDescription={subDescription}
-            href={href}
-            image={image}
-            tags={tags}
-        />
+        {isHidden && (
+            <ProjectDetails 
+                title={title}
+                description={description}
+                subDescription={subDescription}
+                href={href}
+                image={image}
+                tags={tags}
+                closeModal={() => setIsHidden(false)}
+            />
+        )}
     </>  
   )
 }

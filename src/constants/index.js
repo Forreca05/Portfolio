@@ -11,9 +11,9 @@ export const myProjects = [
         "Implemented a robust testing suite using JUnit, ensuring correctness and maintainability.",
         "Collaborated in a team‑based workflow with Git, code reviews, and continuous refactoring."
     ],
-    href: "",
+    href: "https://github.com/Forreca05/Jaba-is-You",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/jaba-is-you.gif",
     tags: [
         {
         id: 1,
@@ -51,12 +51,12 @@ export const myProjects = [
         {
         id: 3,
         name: "LLMs",
-        path: "/assets/logos/llm.svg",
+        path: "/assets/logos/LLMs.svg",
         }
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "LCOM Snake Game",
     description:
         "An advanced and interactive version of Snake and Snake.io, built in C for the LCOM/Minix environment.",
@@ -80,7 +80,7 @@ export const myProjects = [
         {
         id: 2,
         name: "C++",
-        path: "/assets/logos/cpl.svg",
+        path: "/assets/logos/cplusplus.svg",
         },
         {
         id: 3,
@@ -90,7 +90,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "PawConnect",
     description:
         "A full‑stack social platform for pet owners, built for the LBAW course using Laravel, PostgreSQL, and modern web development practices.",
@@ -104,7 +104,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Forreca05/lbaw-pawconnect-project",
     logo: "",
-    image: "/assets/projects/pawconnect.jpg",
+    image: "/assets/projects/pawconnect.mp4",
     tags: [
         {
         id: 1,
@@ -129,7 +129,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: "MealIdeas",
     description:
         "A lightweight web application that helps users discover meal ideas by fetching recipes from an external API.",
@@ -223,55 +223,5 @@ export const experiences = [
         "Guided students through debugging practices and best‑practice development workflows.",
         "Supported instructors in preparing materials and ensuring smooth execution of lab sessions."
     ],
-  },
-];
-export const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
-  },
-  {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
-  },
-  {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
-  },
-  {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
-  },
-  {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
-  },
-  {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
   },
 ];
