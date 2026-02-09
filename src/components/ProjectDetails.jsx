@@ -16,10 +16,10 @@ const ProjectDetails = ({
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center
-      w-full h-full overflow-hidden backdrop-blur-sm"
+      w-full h-full overflow-y-auto backdrop-blur-sm p-4"
     >
       <motion.div
-        className={`relative max-w-2xl border shadow-sm rounded-2xl
+        className={`relative max-w-2xl max-h-[90vh] overflow-y-auto border shadow-sm rounded-2xl
         bg-linear-to-l from-midnight to-navy border-white/10
         ${!hasMedia ? "pt-6" : ""}`}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -37,14 +37,14 @@ const ProjectDetails = ({
         {hasMedia && (
           isVideo ? (
             <video
-                src={image}
-                controls
-                className="mx-auto max-h-[45vh] w-auto object-contain rounded-t-2xl"
+              src={image}
+              controls
+              className="mx-auto max-h-[40vh] w-full object-contain rounded-t-2xl"
             />
           ) : (
             <img
               src={image}
-              className="max-w-full max-h-[70vh] object-contain mx-auto rounded-t-2xl"
+              className="max-w-full max-h-[50vh] w-full object-contain mx-auto rounded-t-2xl"
             />
           )
         )}
