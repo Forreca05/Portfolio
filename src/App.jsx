@@ -13,8 +13,8 @@ const App = () => {
     <Navbar />
     <section id="home"><Hero /></section>
     <section id="about" className="scroll-mt-12"><About /></section>
-    <section id="projects" className="scroll-mt-24"><Projects /></section>
-    <section id="work" className="scroll-mt-24"><Experiences /></section>
+    <section id="projects" className="scroll-mt-14"><Projects /></section>
+    <section id="work" className="scroll-mt-12"><Experiences /></section>
     <section id="contact"><Contact /></section>
     <Footer />
   </div>

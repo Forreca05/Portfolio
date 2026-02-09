@@ -80,7 +80,7 @@ export const myProjects = [
     ],
     href: "https://github.com/Forreca05/LCOM-Snake-Game-Projeto-2025",
     logo: "",
-    image: "/assets/projects/snake-game.jpg",
+    image: "/assets/projects/snake-game.mp4",
     tags: [
       { id: 1, name: "C", path: "/assets/logos/c.svg" },
       { id: 2, name: "C++", path: "/assets/logos/cplusplus.svg" },
