@@ -43,8 +43,8 @@ export const Timeline = ({
               font-bold md:flex md:pl-20 md:text-4xl 
               text-neutral-300">
                 <h3>{item.date}</h3>
-                <h3 className="text-3xl text-neutral-400">{item.title}</h3>
-                <h3 className="text-3xl text-neutral-500">{item.job}</h3>
+                <h3 className="text-3xl text-neutral-400">{item.job}</h3>
+                <h3 className="text-3xl text-neutral-500">{item.institution}</h3>
               </div>
             </div>
 
