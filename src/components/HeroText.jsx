@@ -42,7 +42,7 @@ const HeroText = () => {
                 </motion.div>
                 <motion.p 
                     className="text-4xl font-medium
-                    text-neutral-300"
+                    text-neutral-400"
                     variants={variants}
                     initial="hidden"
                     animate="visible"
