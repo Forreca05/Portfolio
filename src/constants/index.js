@@ -129,6 +129,57 @@ export const myProjects = [
       { id: 2, name: "LLM", path: "/assets/logos/LLMs.svg" },
       { id: 3, name: "Gradio", path: "/assets/logos/gradio.svg" }
     ],
+  },
+
+  {
+    id: 7,
+    title: "CineLista",
+    description:
+      "A full-featured movie and TV show discovery platform with watchlists, ratings, and personal statistics, built with vanilla HTML/CSS/JavaScript and serverless functions.",
+    subDescription: [
+      "Built a discovery experience powered by the TMDb API, with a rotating hero, curated rows (popular, top-rated, trending), genre filters, live search suggestions, and a 'what should I watch' roulette.",
+      "Implemented accounts, a personal watchlist (to watch / watching / watched), star ratings per show or episode, and personal notes, all stored client-side.",
+      "Added episode/season tracking, an upcoming-episodes calendar, viewing statistics (time watched, average rating, genre breakdown), and gamified badges.",
+      "Secured the TMDb API key with a serverless proxy (Vercel Functions) so it never reaches the browser, adding CDN and in-memory caching to reduce rate-limit pressure.",
+      "Integrated Supabase for public reviews and shareable watchlist links, protected with Row Level Security, plus PWA support with offline caching and a light/dark theme."
+    ],
+    href: "https://github.com/Forreca05/CineLista",
+    liveHref: "https://cine-lista-lake.vercel.app/",
+    logo: "",
+    image: "/assets/projects/cinelista.png",
+    tags: [
+      { id: 1, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 2, name: "HTML5", path: "/assets/logos/html5.svg" },
+      { id: 3, name: "CSS3", path: "/assets/logos/css3.svg" },
+      { id: 4, name: "API", path: "/assets/logos/api.svg" }
+    ],
+  },
+
+  {
+    id: 8,
+    title: "Protein Compensatory Interactions Detector",
+    description:
+      "A web platform developed with FEUP and ICBAS that automates the detection of compensatory interactions in proteins, combining sequence alignment with 3D structural analysis.",
+    subDescription: [
+      "Built an end-to-end pipeline that fetches protein sequences and orthologs from Ensembl, aligns them across species, and highlights human disease-associated mutations.",
+      "Implemented automatic mapping of identified mutations onto 3D protein structures (via AlphaFold/PDB), calculating spatial distances between residues to flag potential compensatory interactions.",
+      "Developed a React + Tailwind CSS frontend for interactive sequence alignment views, 3D structure exploration, and automated interaction reports.",
+      "Built a Python/FastAPI backend handling external API integration, sequence processing, and analysis logic, backed by a PostgreSQL database for traceability.",
+      "Worked in a 4-person interdisciplinary team as part of a university-industry integrator project, following an agile process with biweekly sprints and continuous validation from FEUP/ICBAS supervisors."
+    ],
+    href: "https://github.com/jPMm7/PI_V2",
+    liveHref: "https://pi-v2-seven.vercel.app/",
+    logo: "",
+    image: [
+      "/assets/projects/pi-poster.png",
+      "/assets/projects/pi-homepage.png"
+    ],
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "Python", path: "/assets/logos/python.svg" },
+      { id: 4, name: "PostgreSQL", path: "/assets/logos/postgresql.svg" }
+    ],
   }
 ];
 
@@ -195,4 +246,16 @@ export const experiences = [
       "Supported instructors in preparing teaching materials, managing lab sessions, and ensuring a smooth learning experience."
     ],
   },
+  { 
+    job: "Summer Internship", 
+    institution: "Unilinkr", 
+    date: "July 2026 - August 2026", 
+    contents: [ 
+      "Contributed to the development of UniSpot, a platform used during summer events.", 
+      "Worked on building, improving, and maintaining Unilinkr platforms.", 
+      "Collaborated with the development team to implement new features and improve existing functionality.", 
+      "Supported the development of solutions focused on delivering reliable and engaging digital experiences for event users.", 
+      "Contributed to the continuous improvement of Unilinkr's products and platform ecosystem." 
+    ], 
+  }
 ];

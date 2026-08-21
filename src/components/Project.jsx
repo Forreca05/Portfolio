@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import ProjectDetails from './ProjectDetails'
 
-const Project = ({title, description, subDescription, href, image, tags}) => {
+const Project = ({title, description, subDescription, href, liveHref, image, tags}) => {
   const [isHidden, setIsHidden] = useState(false)
   return (
     <>
@@ -33,6 +33,7 @@ const Project = ({title, description, subDescription, href, image, tags}) => {
                 description={description}
                 subDescription={subDescription}
                 href={href}
+                liveHref={liveHref}
                 image={image}
                 tags={tags}
                 closeModal={() => setIsHidden(false)}

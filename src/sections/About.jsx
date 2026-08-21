@@ -20,7 +20,7 @@ const About = () => {
                     <div className="z-10">
                         <p className="headtext">Hi, I'm João Ferreira</p>
                         <p className="subtext">
-                            I'm a 3rd Year Informatics Engineer Student
+                            I'm a 1st year Master's Student of Informatics and Computer Engineering
                             at FEUP.
                             Over the last 3 years i've developed a strong
                             passion for this field, specially on
