@@ -7,7 +7,7 @@ import { ACCENTS } from "./Project"
 // itself) so it can actually pin to the viewport while the taller index
 // scrolls past it — the grid item stretches full height, the inner layer
 // sticks within that space.
-const ProjectPreview = ({ project, total }) => {
+const ProjectPreview = ({ project }) => {
   if (!project) return null
 
   const { id, title, description, image, tags } = project
@@ -22,25 +22,27 @@ const ProjectPreview = ({ project, total }) => {
         <div className="relative h-[60vh] max-h-152 min-h-104
         overflow-hidden rounded-2xl border border-white/5
         bg-linear-to-b from-storm to-indigo">
-          {/* Giant ghost index — the grandiose signature of whichever
-          project currently owns the panel. */}
-          <span
-            aria-hidden
-            className={`pointer-events-none absolute -right-4 -top-10 select-none
-            text-[13rem] font-black leading-none opacity-[0.08]
-            transition-colors duration-500 ${accent.text}`}
-          >
-            {String(id).padStart(2, "0")}
-          </span>
+          {/* One quiet rim light instead of two competing blobs. */}
+          <div
+            className={`pointer-events-none absolute -top-16 left-1/2 h-40 w-40
+            -translate-x-1/2 rounded-full opacity-25 blur-[80px]
+            transition-colors duration-500 ${accent.glowA}`}
+          />
 
-          <div
-            className={`absolute -top-8 left-6 size-32 rounded-full opacity-40
-            blur-3xl mix-blend-screen transition-colors duration-500 ${accent.glowA}`}
-          />
-          <div
-            className={`absolute -top-8 right-6 size-32 rounded-full opacity-40
-            blur-3xl mix-blend-screen transition-colors duration-500 ${accent.glowB}`}
-          />
+          {/* Orbit dial — this project's position marked the way the rest of
+          the site marks orbit (see OrbitingCircles in the skills section),
+          not a giant faded numeral standing in for a hero image. */}
+          <div className="absolute left-4 top-4 z-10 flex size-12 items-center
+          justify-center rounded-full border border-white/15 bg-primary/70 backdrop-blur-sm">
+            <span className={`font-mono text-sm font-bold transition-colors duration-500 ${accent.text}`}>
+              {String(id).padStart(2, "0")}
+            </span>
+            <span
+              style={{ "--radius": 22, "--angle": 0 }}
+              className={`absolute flex size-1.5 animate-orbit items-center justify-center
+              rounded-full transition-colors duration-500 ${accent.glowA}`}
+            />
+          </div>
 
           <AnimatePresence mode="wait">
             <motion.div
@@ -83,10 +85,7 @@ const ProjectPreview = ({ project, total }) => {
               <div className="absolute inset-x-0 bottom-0 h-2/3 bg-linear-to-t
               from-black/85 via-black/30 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <p className={`font-mono text-xs tracking-widest uppercase ${accent.text}`}>
-                  {String(id).padStart(2, "0")} / {String(total).padStart(2, "0")}
-                </p>
-                <p className="mt-1 text-3xl font-bold text-white md:text-4xl">
+                <p className="text-3xl font-bold text-white md:text-4xl">
                   {title}
                 </p>
               </div>

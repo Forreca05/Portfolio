@@ -7,24 +7,29 @@ const HeroText = () => {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 }
   }
+  // Desktop keeps the same staggered timing but just fades in, no side slide.
+  const desktopVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  }
   return (
     <div className="z-10 mt-20 text-center md:mt-40
     md:text-left rounded-3xl bg-clip-text">
         {/* Desktop View */}
         <div className="flex-col hidden md:flex c-space">
-            <motion.h1 
+            <motion.h1
                 className="text-4xl font-medium"
-                variants={variants}
+                variants={desktopVariants}
                 initial="hidden"
                 animate="visible"
                 transition={{delay:1}}>
                 Hi I'm João
             </motion.h1>
             <div className="flex flex-col items-start">
-                <motion.p 
-                    className="text-5xl font-medium 
+                <motion.p
+                    className="text-5xl font-medium
                     text-neutral-300"
-                    variants={variants}
+                    variants={desktopVariants}
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.2}}>
@@ -32,18 +37,18 @@ const HeroText = () => {
                     Eager to Grow
                 </motion.p>
                 <motion.div
-                    variants={variants}
+                    variants={desktopVariants}
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.5}}
                 >
-                    <FlipWords words={words} 
+                    <FlipWords words={words}
                         className="font-black text-white text-8xl"/>
                 </motion.div>
-                <motion.p 
+                <motion.p
                     className="text-4xl font-medium
                     text-neutral-100"
-                    variants={variants}
+                    variants={desktopVariants}
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.8}}>
@@ -77,8 +82,8 @@ const HeroText = () => {
                     animate="visible"
                     transition={{delay:1.5}}
                 >
-                    <FlipWords words={words} 
-                        className="font-bold text-white text-7xl"/>
+                    <FlipWords words={words}
+                        className="font-bold text-white text-5xl whitespace-nowrap"/>
                 </motion.div>
                 <motion.p 
                     className="text-4xl font-black 
