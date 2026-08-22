@@ -141,7 +141,6 @@ export const myProjects = [
       "Implemented accounts, a personal watchlist (to watch / watching / watched), star ratings per show or episode, and personal notes, all stored client-side.",
       "Added episode/season tracking, an upcoming-episodes calendar, viewing statistics (time watched, average rating, genre breakdown), and gamified badges.",
       "Secured the TMDb API key with a serverless proxy (Vercel Functions) so it never reaches the browser, adding CDN and in-memory caching to reduce rate-limit pressure.",
-      "Integrated Supabase for public reviews and shareable watchlist links, protected with Row Level Security, plus PWA support with offline caching and a light/dark theme."
     ],
     href: "https://github.com/Forreca05/CineLista",
     liveHref: "https://cine-lista-lake.vercel.app/",
@@ -165,7 +164,6 @@ export const myProjects = [
       "Implemented automatic mapping of identified mutations onto 3D protein structures (via AlphaFold/PDB), calculating spatial distances between residues to flag potential compensatory interactions.",
       "Developed a React + Tailwind CSS frontend for interactive sequence alignment views, 3D structure exploration, and automated interaction reports.",
       "Built a Python/FastAPI backend handling external API integration, sequence processing, and analysis logic, backed by a PostgreSQL database for traceability.",
-      "Worked in a 4-person interdisciplinary team as part of a university-industry integrator project, following an agile process with biweekly sprints and continuous validation from FEUP/ICBAS supervisors."
     ],
     href: "https://github.com/jPMm7/PI_V2",
     liveHref: "https://pi-v2-seven.vercel.app/",
@@ -179,6 +177,33 @@ export const myProjects = [
       { id: 2, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
       { id: 3, name: "Python", path: "/assets/logos/python.svg" },
       { id: 4, name: "PostgreSQL", path: "/assets/logos/postgresql.svg" }
+    ],
+  },
+
+  {
+    id: 9,
+    title: "Prairie Survival",
+    description:
+      "An interactive 3D survival game built with WebCGF for the CGRA course, featuring procedural terrain, custom shaders, and a horse-drawn wagon collecting hay bales across a living prairie.",
+    subDescription: [
+      "Built a procedurally generated spring prairie scene in WebGL/WebCGF, combining wave-based terrain elevation, hill influence points, and distance-based scatter placement for rocks, flowers, and grass.",
+      "Modeled and animated a hierarchical horse-drawn wagon (wheels, axle, tongue, cover) with keyboard-controlled movement, steering, collision detection, and pickup/drop mechanics for hay bales.",
+      "Wrote custom GLSL shaders for wind-animated grass, dynamic water and terrain rendering, a day/night sky dome, and pulsing directional arrows guiding the player to collectibles.",
+      "Implemented full game state management: an HP system with time decay and collision damage, a scoring system, pause/restart flow, and a movement-undo mechanic to recover from getting stuck.",
+      "Designed a complete HUD with Dat.GUI debug controls, a real-time minimap, and a contextual help overlay, developed collaboratively as a 3-person team using Git and GitLab."
+    ],
+    href: "https://github.com/Forreca05/CGRA-Project",
+    liveHref: "https://cgra-project.vercel.app",
+    logo: "",
+    image: [
+      "/assets/projects/cgra-prairie-survival.mp4",
+      "/assets/projects/cgra-prairie-survival-1.png",
+      "/assets/projects/cgra-prairie-survival-2.png",
+      "/assets/projects/cgra-prairie-survival-3.png"
+    ],
+    tags: [
+      { id: 1, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 2, name: "WebGL", path: "/assets/logos/webgl.svg" }
     ],
   }
 ];
